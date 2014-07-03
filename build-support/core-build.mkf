@@ -64,7 +64,7 @@ jxa:
 	$(BUILDSCRIPT) compile $(SRCDIR) $(BEAMDIR)
 
 update-versions:
-	#build-support/update-versions.sh
+	$(CURDIR)/build-support/update-versions.sh
 
 build: update-versions
 	$(REBAR) compile
